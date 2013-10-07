@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 /* Page headers */
 .bf-header {
-  padding: 30px 30px 40px;
+  padding: 5px 20px 10px;
   font-size: 16px;
   color: #5a5a5a;
   text-align: center;
@@ -272,6 +272,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .bf-header .container {
   position: relative;
+}
+
+.bf-docs-container {
+  padding-top: 20px;
 }
 
 .bf-docs-section + .bf-docs-section {
