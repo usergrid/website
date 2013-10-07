@@ -193,8 +193,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 40px 0;
 }
 .bf-features h2 {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  text-align: left;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
   font-size: 28px;
   color:#666666;
   border-bottom: 1px solid #e5e5e5;
@@ -227,7 +228,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  background-color: #222939;
+  background-color: #34495e;
 }
 .bf-features-inverse h2 {
   margin-bottom: 20px;
