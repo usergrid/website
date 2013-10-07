@@ -1,181 +1,108 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<head>
+    <meta charset="utf-8">
     <title>Apache Usergrid</title>
-    <link rel="stylesheet" href="template.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Apache Usergrid, Usergrid, BaaS, Backend As A service">
+    <meta name="description" content="" />
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+    <link href="css/frame-templete.css" rel="stylesheet" type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-<header>
-    <div class="pure-menu pure-menu-open pure-menu-horizontal">
-        <a href="#" class="pure-menu-heading"><img id="title_logo" src="img/usergrid_logo_900_200.png"></a>
-        <ul>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Using</a></li>
-            <li><a href="#">Contributing</a></li>
+<body class="bf-docs-home">
+    <a class="sr-only" href="#content">
+        Skip navigation
+    </a>
+    <!-- Docs master nav -->
+    <header class="navbar navbar-inverse navbar-fixed-top bf-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bf-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/usergrid_200.png" />
+                </a>
+            </div>
+            <nav class="collapse navbar-collapse bf-navbar-collapse bf-navbar-margin nav-pills" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a></li></li>
+                    <li><a href="using.html">Using</a></li>
+                    <li><a href="contributing.html">Contributing</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page content of course! -->
+    <section class="bf-masthead" id="content" role="main">
+        <div class="bf-masthead-bg">
+            <div class="container">
+                <h1><img src="img/usergrid_logo_white.png" /></h1>
+                <p class="lead">Usergrid is a multi-tenant Backend-as-a-Service stack for web & mobile applications, based on RESTful APIs.</p>
+                <p>Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database, application layer and client tier with SDKs for developers looking to rapidly build web and/or mobile applications. It provides elementary services (user registration & management, data storage, file storage, queues) and retrieval features (full text search, geolocation search, joins) to power common app features.</p>
+                <p><a href="#" class="btn btn-outline btn-lg" rel="external nofollow">Download Usergrid 0.1</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bf-features">
+        <div class="container">
+            <div class="row">
+                <h1>Get Started</h1>
+                <p><b>Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database</b><p>
+                <p>Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bf-features-inverse">
+        <div class="container">
+            <div class="row">
+                <p><b>Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database</b><p>
+                <p>Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bf-footer container" role="contentinfo">
+        <ul class="bf-masthead-links">
+            <li>Copyright © 2013 The Apache Software Foundation, Licensed under the Apache License, Version 2.0. Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
+            </li>
         </ul>
-    </div>
-</header>
-<div class="hero">
-    <div class="pure-g-r">
-        <div class="wrap">
+    </footer>
 
-            <div class="pure-g-r">
-                <div class="pure-u-1-3">
-                    <div class="l-box">
-                        <img src="img/usergrid_profile_256.png">
-                    </div>
-                </div>
-
-                <div class="pure-u-2-3">
-                    <p class="hero_title">Usergrid is a multi-tenant Backend-as-a-Service stack for web & mobile applications, based on RESTful APIs.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-</div>
-
-<div class="content">
-    <div class="pure-g-r content-ribbon">
-        <div class="pure-u-2-3">
-            <div class="l-box">
-                <h4 class="content-subhead">Some small text</h4>
-
-                <h3>Lorem ipsum dolor sit amet.</h3>
-
-                <p>
-                    Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis
-                    ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet
-                    lobortis nulla pharetra.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-3">
-            <div class="l-box">
-                <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
-            </div>
-        </div>
-    </div>
-    <div class="pure-g-r content-ribbon">
-        <div class="pure-u-2-3">
-            <div class="l-box">
-                <h4 class="content-subhead">Some small text</h4>
-
-                <h3>Lorem ipsum dolor sit amet.</h3>
-
-                <p>
-                    Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis
-                    ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet
-                    lobortis nulla pharetra.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-3">
-            <div class="l-box">
-                <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
-            </div>
-        </div>
-    </div>
-    <div class="pure-g-r content-ribbon">
-        <div class="pure-u-2-3">
-            <div class="l-box">
-                <h4 class="content-subhead">Some small text</h4>
-
-                <h3>Lorem ipsum dolor sit amet.</h3>
-
-                <p>
-                    Pellentesque hendrerit lobortis ornare. Fusce luctus imperdiet consequat. Nullam quis nunc quis
-                    ligula luctus vestibulum non quis libero. Suspendisse tristique nisl ut velit facilisis sit amet
-                    lobortis nulla pharetra.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-3">
-            <div class="l-box">
-                <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
-            </div>
-        </div>
-    </div>
-
-    <div class="pure-g-r content-ribbon" id="yui_3_12_0_1_1380959901386_15">
-        <div class="pure-u-1-3">
-            <div class="l-box">
-                <img src="http://placehold.it/400x250" alt="Placeholder image for example.">
-            </div>
-        </div>
-
-        <div class="pure-u-2-3" id="yui_3_12_0_1_1380959901386_14">
-            <div class="l-box" id="yui_3_12_0_1_1380959901386_13">
-                <h4 class="content-subhead">Some more small text</h4>
-
-                <h3>Etiam iaculis iaculis lobortis.</h3>
-
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi
-                    fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="pure-g-r" id="yui_3_12_0_1_1380959901386_19">
-        <div class="pure-u-1-4">
-            <div class="l-box">
-                <h3>Subheading</h3>
-
-                <p>
-                    Donec suscipit, risus vel venenatis ornare, nibh massa ultrices diam, a elementum metus felis sit
-                    amet eros. Phasellus pellentesque euismod massa sed pellentesque.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-4">
-            <div class="l-box">
-                <h3>Subheading</h3>
-
-                <p>
-                    Donec suscipit, risus vel venenatis ornare, nibh massa ultrices diam, a elementum metus felis sit
-                    amet eros. Phasellus pellentesque euismod massa sed pellentesque.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-4" id="yui_3_12_0_1_1380959901386_18">
-            <div class="l-box" id="yui_3_12_0_1_1380959901386_17">
-                <h3>Subheading</h3>
-
-                <p>
-                    Donec suscipit, risus vel venenatis ornare, nibh massa ultrices diam, a elementum metus felis sit
-                    amet eros. Phasellus pellentesque euismod massa sed pellentesque.
-                </p>
-            </div>
-        </div>
-
-        <div class="pure-u-1-4">
-            <div class="l-box">
-                <h3>Subheading</h3>
-
-                <p>
-                    Donec suscipit, risus vel venenatis ornare, nibh massa ultrices diam, a elementum metus felis sit
-                    amet eros. Phasellus pellentesque euismod massa sed pellentesque.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="l-box ribbon">
-        <h2>Get started now.</h2>
-        <a href="#" class="pure-button primary-button">Sign up</a>
-    </div>
-</div>
-<footer>
-    <h1>Footer</h1>
-</footer>
+    <script type="text/javascript" src="js/head.js"></script>
+    <script type="text/javascript">
+        head.js("js/jquery-1.10.1.min.js", "js/bootstrap.min.js");
+    </script>
+    <script type="text/javascript">
+        //IE outdate friendly warning if you don't want remove it
+        var $buoop = {vs:{i:8,f:3.6,o:10.6,s:3.2,n:9}}
+        $buoop.ol = window.onload;
+        window.onload=function(){
+            try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+            var e = document.createElement("script");
+            e.setAttribute("type", "text/javascript");
+            e.setAttribute("src", "http://browser-update.org/update.js");
+            document.body.appendChild(e);
+        }
+    </script>
 </body>
 </html>
