@@ -91,10 +91,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   border-bottom: 1px solid #454545 !important;  
 }
 .bf-docs-nav .navbar-brand {
-  padding-left: 60px;
+  padding-left: 20px;
 }
 .bf-docs-nav .navbar-nav > li > a {
-  margin: 15px 5px 0;
+  margin: 10px 5px 0;
   padding: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -190,11 +190,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
 }
 .bf-features {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .bf-features h2 {
-  margin-bottom: 20px;
-  font-size: 40px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  font-size: 28px;
+  color:#666666;
+  border-bottom: 1px solid #e5e5e5;
 }
 .bf-features h2 ~ p {
   margin-bottom: 40px;
@@ -770,8 +773,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
   /* Tweak display of docs jumbotrons */
   .bf-masthead .bf-masthead-bg {
-    padding-top:    70px;
-    padding-bottom: 50px;
+    padding-top:    80px;
+    padding-bottom: 20px;
   }
 
   .bf-masthead h1 {
