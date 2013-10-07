@@ -512,6 +512,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 -------------------------------------------------- */
 
 .bf-footer {
+  padding: 30px 0;
   text-align: center;
   background-color: #000;
 }
