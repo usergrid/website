@@ -128,11 +128,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: #4ab0d9;
 }
 
-.bf-masthead .bf-masthead-bg a{
-    color:#fff;
-}
-
-
 .bf-masthead .logo {
   height: 203px;
 }
@@ -539,12 +534,38 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .bf-footer {
   padding: 30px 5px;
-  text-align: left;
+  /*text-align: left;*/
   background:#34495e;
   color:#f0f0f0;
 }
+
+.bf-footer a {
+    color:#f0f0f0 !important;
+}
 .bf-footer.bf-footer-margin {
-  margin-top: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.bf-footer .bf-icon-wrap {
+    font-size: 40px;
+    color: #a5b6c7;
+    display: inline;
+    margin: 10px;
+}
+
+#footer-icons {
+    float: right;
+    display: inline;
+    line-height: 20px;
+    margin: 40px 10px 20px 10px;
+}
+
+#copyright {
+    float: left;
+    display: inline;
+    line-height: 20px;
+    margin: 40px 10px 20px 10px;
 }
 
 /* Social proof buttons from GitHub & Twitter */
