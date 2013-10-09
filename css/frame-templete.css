@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 -------------------------------------------------- */
 
 .bf-footer {
-  padding: 30px 0;
+  padding: 30px 5px;
   text-align: left;
   background:#34495e;
   color:#f0f0f0;
@@ -793,4 +793,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   .bf-header p {
     margin-right: 380px;
   }
+}
+
+.navbar-toggle {
+  background-color: #34495e;
 }
