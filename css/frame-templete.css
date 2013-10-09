@@ -122,11 +122,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background: #cbcbcd url(../img/rende.png) no-repeat 50% 100px;
 }
 .bf-masthead .bf-masthead-bg {
-  margin-top: 10px;
-  padding: 30px 15px;
-  color:#fff;
-  background-color: #4ab0d9;
+    /*margin-top: 10px;*/
+    padding: 30px 15px;
+    color:#fff;
+    background-color: #4ab0d9;
 }
+
+.bf-masthead .bf-masthead-bg a{
+    color:#fff;
+}
+
+
 .bf-masthead .logo {
   height: 203px;
 }
