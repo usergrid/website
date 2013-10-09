@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* Top nav and header
 -------------------------------------------------- */
 .bf-docs-nav {
-  border-bottom: 1px solid #454545 !important;  
+  border-bottom: 0px;
 }
 .bf-docs-nav .navbar-brand {
   padding-left: 20px;
@@ -111,31 +111,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   background-color: #2ba3d4 !important;
 }
 
-/* Homepage */
-.bf-docs-home {
-  color: #fff;
-  background-color: #000;
-}
-
 /* Homepage masthead
 -------------------------------------------------- */
-
+.navbar-inverse {
+    background-color:#4ab0d9;
+}
 .bf-masthead {
   position: relative;
   text-align: center;
   background: #cbcbcd url(../img/rende.png) no-repeat 50% 100px;
 }
 .bf-masthead .bf-masthead-bg {
+  margin-top: 10px;
   padding: 30px 15px;
-  background-color: rgba(43, 163, 212, 0.85)
+  color:#fff;
+  background-color: #4ab0d9;
 }
 .bf-masthead .logo {
   height: 203px;
 }
 .bf-masthead h1 {
-  margin-top: -30px;
-  font-size: 50px;
-  line-height: 1;
+  font-size: 30px;
+  line-height: 1.4;
   color: #fff;
 }
 .bf-masthead .bf-masthead-links a,
@@ -223,6 +220,45 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .bf-features h3 ~ p {
   color: #656565;
 }
+.bf-features2 {
+  color: #292929;
+  background-color: #F5F6F7;
+  text-align: center;
+}
+.bf-features2 {
+  padding: 40px 0;
+}
+.bf-features2 h2 {
+  text-align: left;
+  margin-bottom: 16px;
+  padding-bottom: 6px;
+  font-size: 28px;
+  color:#666666;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bf-features2 h2 ~ p {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.bf-features2 .bf-icon-wrap {
+  margin: 0 auto 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #e5e9ed;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  color: #a5b6c7;
+}
+.bf-features2 h3 {
+  margin: 0 0 10px;
+  color: #696969;
+}
+.bf-features2 h3 ~ p {
+  color: #656565;
+}
 .bf-features-inverse {
   padding: 140px 0;
   font-size: 16px;
@@ -284,30 +320,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .bf-docs-section + .bf-docs-section {
   padding-top: 20px;
-}
-
-/* Docs sidebar
--------------------------------------------------- */
-
-/* First level of nav */
-.bf-sidenav {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-top:    10px;
-  padding-bottom: 10px;
-  font-size: 12px;
-}
-.bf-sidebar .nav > li > a:hover,
-.bf-sidebar .nav > li > a:focus {
-  color: #2ba3d4;
-}
-.bf-sidebar .nav > li.active > a,
-.bf-sidebar .nav > li.active > a:hover,
-.bf-sidebar .nav > li.active > a:focus {
-  color: #2ba3d4;
-}
-.bf-sidebar .vertical-blank {
-  height: 30px;
 }
 
 /* Bootstrap code examples
@@ -521,21 +533,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .bf-footer {
   padding: 30px 0;
-  text-align: center;
-  background-color: #000;
+  text-align: left;
+  background:#34495e;
+  color:#f0f0f0;
 }
 .bf-footer.bf-footer-margin {
   margin-top: 100px;
-}
-.bf-footer p {
-  margin-bottom: 0;
-  color: #ddd;
-}
-.bf-footer a {
-  color: #8f8d8d;
-}
-.bf-footer a:hover {
-  color:#fff;
 }
 
 /* Social proof buttons from GitHub & Twitter */
@@ -770,19 +773,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
   .bf-sidebar > .nav > li > a {
     display: inline-block;
-  }
-
-  /* Tweak display of docs jumbotrons */
-  .bf-masthead .bf-masthead-bg {
-    padding-top:    80px;
-    padding-bottom: 20px;
-  }
-
-  .bf-masthead h1 {
-    font-size: 60px;
-  }
-  .bf-masthead .lead {
-    font-size: 20px;
   }
 
   .bf-navbar-top-example .navbar-fixed-top,
