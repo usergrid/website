@@ -41,6 +41,11 @@ li.nav-header {
   font-weight: 400 !important;
   opacity: 1.0;
 }
+
+.navbar-collapse {
+    max-height: none;
+}
+
 .bf-features p, .bf-masthead-bg p {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
