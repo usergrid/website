@@ -64,8 +64,10 @@ h1 {
 }
 h2 {
   font-weight: 400;
-  color: #4ab0d9 !important;
   margin-bottom: 0 !important;
+}
+section > .container > h2 {
+  color: #4ab0d9 !important;
 }
 h3 {
   padding-top: 20px;
@@ -193,7 +195,7 @@ li.divider {
 }
 .bf-masthead {
   position: relative;
-  text-align: center;
+  text-align: left;
   background: #cbcbcd url(../img/rende.png) no-repeat 50% 100px;
 }
 .bf-masthead .bf-masthead-bg {
@@ -202,9 +204,40 @@ li.divider {
     color:#fff;
     background-color: #4ab0d9;
 }
-
-.bf-masthead .logo {
+/*.bf-masthead .logo {
   height: 203px;
+}*/
+.bf-masthead .logo-title {
+  width: 600px;
+  padding: 40px 0 10px 0;
+  margin-left: 0;
+}
+.bf-masthead .text-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.bf-masthead .tagline {
+  font-style:italic;
+  font-weight:200;
+  font-size: 300%;
+  margin-bottom: 0;
+  margin-left: 150px;
+  color: white;
+}
+.bf-masthead .tagline em {
+  font-style: normal;
+}
+.bf-masthead .description {
+  font-style: italic;
+  font-size: 150%;
+  margin-bottom: 40px;
+  margin-left: 150px;
+}
+.bf-masthead .btn-wrapper {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 150px;
 }
 .bf-masthead h1 {
   font-size: 30px;
