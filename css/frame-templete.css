@@ -428,7 +428,7 @@ section > .container > h2 {
 }
 
 .bf-docs-container {
-  padding-top: 20px;
+  margin-top: 60px;
 }
 
 .bf-docs-section + .bf-docs-section {
@@ -834,6 +834,11 @@ section > .container > h2 {
   }
 }
 
+
+.bf-docs-container {
+    margin-top: 40px;
+}
+
 /* Navbars */
 .bf-example .navbar:last-child {
   margin-bottom: 0;
@@ -887,6 +892,10 @@ section > .container > h2 {
     line-height: 1;
   }
 
+  .bf-docs-container {
+    margin-top: 80px;
+  }
+
   .bf-example {
     margin-left: 0;
     margin-right: 0;
@@ -931,6 +940,9 @@ section > .container > h2 {
   .bf-header h1,
   .bf-header p {
     margin-right: 380px;
+  }
+  .bf-docs-container {
+    margin-top: 40px;
   }
 }
 
