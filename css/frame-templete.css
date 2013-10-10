@@ -6,10 +6,65 @@ body {
   position: relative; /* For scrollyspy */
   padding-top: 50px; /* Account for fixed navbar */
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size:14px;
   /*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;  
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 300;
+}
+h5, h6, .h5, .h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.navbar-nav > li, .nav-list > li {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300 !important;
+  font-size: 120%;
+}
+.nav-list > li {
+  opacity: 0.8;
+}
+.nav-list > li > a {
+  padding-left: 0;
+}
+li.nav-header {
+  font-weight: 600 !important;
+  opacity: 1.0;
+  padding-left: 0 !important;
+}
+.navbar-nav > li > a {
+  font-weight: 300 !important;
+  opacity: 0.8;
+}
+.navbar-nav > li > a.major {
+  font-weight: 400 !important;
+  opacity: 1.0;
+}
+.bf-features p, .bf-masthead-bg p {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 120%;
+}
+a.btn {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500 !important;
+  font-style: normal;
+  letter-spacing: 110%;
+}
+h1 {
+  font-weight: 200;
+  letter-spacing: 110%;
+  font-size: 200%;
+}
+h3 {
+  font-weight: 400 !important;
+}
+#copyright {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300 !important;
+  font-style: italic;
+  opacity: 0.8;
 }
 /* font-face
 -------------------------------------------------- */
@@ -90,8 +145,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .bf-docs-nav {
   border-bottom: 0px;
 }
-.bf-docs-nav .navbar-brand {
+.bf-docs-nav {
   padding-left: 20px;
+}
+.navbar-brand {
+  padding-left: 0;
 }
 .bf-docs-nav .navbar-nav > li > a {
   margin: 10px 5px 0;
@@ -189,7 +247,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 .bf-features {
   padding: 40px 0;
-}
+} 
 .bf-features h2 {
   text-align: left;
   margin-bottom: 16px;
