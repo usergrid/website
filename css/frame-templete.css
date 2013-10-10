@@ -209,7 +209,7 @@ li.divider {
 }*/
 .bf-masthead .logo-title {
   width: 600px;
-  padding: 40px 0 10px 0;
+  padding: 40px 0 0 0;
   margin-left: 0;
 }
 .bf-masthead .text-container {
@@ -222,7 +222,7 @@ li.divider {
   font-weight:200;
   font-size: 300%;
   margin-bottom: 0;
-  margin-left: 150px;
+  margin-left: 140px;
   color: white;
 }
 .bf-masthead .tagline em {
@@ -232,12 +232,12 @@ li.divider {
   font-style: italic;
   font-size: 150%;
   margin-bottom: 40px;
-  margin-left: 150px;
+  margin-left: 140px;
 }
 .bf-masthead .btn-wrapper {
   text-align: left;
   margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 140px;
 }
 .bf-masthead h1 {
   font-size: 30px;
