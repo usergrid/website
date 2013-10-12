@@ -1,8 +1,10 @@
-var limit = 120;
+var start = 120;
+var end = 310;
 
 function setHeaderForScroll(scrollTop) {
-    if(scrollTop > limit) {
-        opacity = (Math.floor(scrollTop) - limit)/100;
+    if(scrollTop > start) {
+        opacity = (Math.floor(scrollTop) - start)/end;
+        console.log(opacity);
         percent = Math.min(opacity, 1)
         red = Math.floor(36 + (52-36) * percent);
         green = Math.floor(129 - (129-73) * percent);
