@@ -31,4 +31,11 @@ $(document).ready(function() {
     setHeaderForScroll($("body").scrollTop());
   });
 
+  $(".navbar-toggle").bind("click", function(){
+      if($(".collapse").hasClass("collapse"))
+          $("#home-logo").css("opacity", 100);
+      else
+          $("#home-logo").css("opacity", 0);
+  });
+
 });
