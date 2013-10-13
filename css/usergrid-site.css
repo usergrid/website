@@ -166,12 +166,24 @@ h3 {
 header.navbar.secondary {
   box-shadow: 0px 1px 2px rgb(36,129,166);
 }
+.navbar-inverse {
+    background-color: rgb(36,129,166);
+}
+nav.navbar-collapse {
+  border-color: rgb(52, 73, 94) !important;
+  border-width: 1px;
+  box-shadow: none;
+  padding-left: 15px;
+}
 .bf-docs-nav {
   border-bottom: 0px;
-}
-.bf-docs-nav {
   padding-left: 20px;
+  padding-right: 20px;
 }
+.navbar-nav {
+  margin: 0 0 10px 10px;
+}
+
 .navbar-brand {
   padding-left: 0;
 }
@@ -198,9 +210,6 @@ li.divider {
 
 /* Homepage masthead
 -------------------------------------------------- */
-.navbar-inverse {
-    background-color: rgb(36,129,166);
-}
 .bf-masthead {
   position: relative;
   text-align: left;
@@ -965,5 +974,6 @@ section > .container > h2 {
 }
 
 .navbar-toggle {
-  background-color: #34495e;
+  background-color: rgb(52, 73, 94);
+  margin-right: 0;
 }
