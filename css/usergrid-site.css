@@ -22,6 +22,11 @@ h5, h6, .h5, .h6 {
   font-weight: 300 !important;
   font-size: 120%;
 }
+
+.navbar-nav >li .icns {
+  font-size: 140%;
+}
+
 .nav-list > li {
   opacity: 0.8;
 }
@@ -48,9 +53,14 @@ li.nav-header {
 
 .bf-features p, .bf-masthead-bg p {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 200;
   font-size: 120%;
+  line-height: 120%;
+}
+.bf-features p a {
+  font-weight: 600;
+  color: rgb(52,73,94);
 }
 a.btn {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -69,7 +79,7 @@ h1 {
 }
 h2 {
   font-weight: 400;
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
 }
 section > .container > h2 {
   color: #2481A6 !important;
@@ -234,7 +244,7 @@ li.divider {
 }*/
 .bf-masthead .logo-title {
   width: 600px;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   margin-left: 0;
 }
 .bf-masthead .text-container {
@@ -247,6 +257,7 @@ li.divider {
   font-weight:200;
   font-size: 300%;
   margin-bottom: 0;
+  padding-bottom: 20px;
   color: white;
   line-height: 90%;
 }
@@ -257,7 +268,7 @@ li.divider {
   font-style: normal;
   font-size: 150%;
   margin-bottom: 40px;
-  line-height: 100%;
+  /*line-height: 100%;*/
 }
 .bf-masthead .btn-wrapper {
   text-align: center;
@@ -358,20 +369,21 @@ section > .container > h2 {
   font-size: 16px;
 }
 .bf-features .bf-icon-wrap {
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #e5e9ed;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  font-size: 40px;
-  color: #a5b6c7;
+  background-color: rgb(52,73,94);
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 50px;
+  color: #FAFBFC;
 }
 .bf-features h3 {
   margin: 0 0 10px;
-  color: #696969;
+  color: rgb(52,73,94);
+  font-weight: 400 !important;
 }
 .bf-features h3 ~ p {
   color: #656565;
@@ -452,6 +464,18 @@ section > .container > h2 {
 }
 .bf-news ul {
   margin-bottom: 20px;
+}
+
+.bf-questions .container {
+  border-top: 1px solid rgb(52,73,94);
+  border-bottom: 1px solid rgb(52,73,94);
+  padding: 60px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bf-questions div {
+  line-height: 30px;
 }
 
 /* Docs pages and sections
@@ -691,6 +715,7 @@ section > .container > h2 {
 -------------------------------------------------- */
 
 .bf-footer {
+  margin-top: 40px;
   padding: 30px 5px;
   /*text-align: left;*/
   background:#34495e;
@@ -930,7 +955,6 @@ section > .container > h2 {
 @media screen and (max-width: 768px) {
   .bf-masthead .tagline {
     line-height: 90%;
-    padding-bottom: 20px;
   }
   .bf-masthead .description {
     margin-bottom: 30px;
