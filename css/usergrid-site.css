@@ -911,10 +911,17 @@ section > .container > h2 {
 
 /* Phone and below */
 @media screen and (max-width: 768px) {
+  .bf-masthead .tagline {
+    line-height: 90%;
+    padding-bottom: 20px;
+  }
+  .bf-masthead .description {
+    margin-bottom: 30px;
+  }
   .bf-masthead p {
     clear:both;
     line-height: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .bf-masthead .or {
     margin-right: 0;
