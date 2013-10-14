@@ -163,6 +163,14 @@ h3 {
 
 /* Navs and headers
 -------------------------------------------------- */
+.logo-small {
+  width: 250px;
+  height: 30px;
+  background-size: 250px 30px;
+  color: transparent;
+  background-image: url('../img/apache_usergrid_logo_white_small.png');
+}
+
 header.navbar.secondary {
   box-shadow: 0px 1px 2px rgb(36,129,166);
 }
