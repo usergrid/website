@@ -3,13 +3,13 @@
 <head>
 <head>
     <meta charset="utf-8">
-    <title>Apache Usergrid: a multi-tenant BaaS stack for web & mobile applications, based on RESTful APIs.</title>
+    <title>Apache Usergrid: an open-source BaaS stack for web & mobile applications, based on RESTful APIs.</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="keywords" content="Apache Usergrid, Usergrid, BaaS, Backend-as-a-Service">
-    <meta name="description" content="" />
+    <meta name="description" content="An open-source Backend-as-a-Service stack for web & mobile applications, based on RESTful APIs." />
     <meta property="og:title" content="Apache Usergrid" />
-    <meta property="og:description" content="A multi-tenant Backend-as-a-Service stack for web & mobile applications, based on RESTful APIs." />
+    <meta property="og:description" content="An open-source Backend-as-a-Service stack for web & mobile applications, based on RESTful APIs." />
     <!-- Loading Typekit -->
     <script type="text/javascript" src="//use.typekit.net/ddl7izx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -43,14 +43,18 @@
     </div>
     <nav class="collapse navbar-collapse bf-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav navbar-right">
+            <!--
             <li><a class="major" href="overview.html">Overview</a></li></li>
             <li><a class="major" href="using.html">Using</a></li></li>
             <li><a class="major" href="using.html">Contributing</a></li>
-            <li><a href="http://github.com/usergrid">Code</a></li>
-            <li><a href="documents.html">Docs</a></li>
             <li><a href="https://issues.apache.org/jira/browse/usergrid">Issues</a></li>
-            <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4">IRC</a></li>
-            <li><a href="https://groups.google.com/forum/#!forum/usergrid">Mailing List</a></li>
+            <li><a href="documents.html">Docs</a></li>-->
+            <li><a href="http://github.com/usergrid" class="icns icon-github-sign"></a></li>
+            <li><a href="https://trello.com/b/exQmJIOn/usergrid" class="icns icon-trello"></a></li>
+            <li><a href="http://stackoverflow.com/search?q=usergrid" class="icns icon-stackexchange"></a></li>
+            <li><a href="https://twitter.com/usergrid" class="icns icon-twitter"></a></li>
+            <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4" class="icns icon-comments"></a></li>
+            <li><a href="https://groups.google.com/forum/#!forum/usergrid" class="icns icon-envelope"></a></li>
         </ul>
     </nav>
 </div>
@@ -63,9 +67,8 @@
             <img class="logo-title img-responsive" src="img/apache_usergrid_logo_white.png" />
             <div class="text-container">
                 <h2 class="tagline">The BaaS <em>not</em> made for Hipsters</h2>
-                <p class="description">Designed for multi-tenancy &amp; operational predictability.
-                Built on Java 6, Jersey &amp; Cassandra.
-                Open source since 2011. 
+                <p class="description">Designed for multi-tenancy &amp; operational predictability. Built on Java 6, Jersey &amp; Cassandra, with SDKs for iOS, Android, HTML5/JS, node.js, Java, .NET, PHP and more.
+                <em>Open source since 2011.</em>
             </p>
             </div>
             
@@ -83,36 +86,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-user"></i></div>
+                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-group"></i></div>
                 <h3>Users</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <p>Sign up users, log in, reset passwords and more, in just one API call. You can put users in groups, assign roles or permissions, let users follow each other and access everything via OAuth 2.0, without writing a single line of server code.</p>
             </div>
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-arrow-down"></i></div>
-                <h3>DataStore</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-book"></i></div>
+                <h3>Data</h3>
+                <p>If you can express it in JSON, we can store it! Underneath everything is stored in a standard Cassandra instance, but we’ve added the ability to retrieve data via SQL, do graph queries, and even joins.</p>
             </div>
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-file"></i></div>
-                <h3>File</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-picture"></i></div>
+                <h3>Files</h3>
+                <p>Our asset storage can handle anything from text files to videos of several terrabytes, with automatic content-detection and full URL access control. In the back, everything goes Amazon S3 or other preferred cloud file store.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-arrow-down"></i></div>
-                <h3>DataStore</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <div class="bf-icon-wrap" style="font-size:40px"><i aria-hidden="true" class="icon-apple"></i> <i aria-hidden="true" class="icon-android"></i></div>
+                <h3>SDKs</h3>
+                <p>We have full SDKs for <a href="https://github.com/usergrid/usergrid-ios-sdk">iOS</a>, <a href="https://github.com/usergrid/usergrid-android-sdk">Android</a>, and <a href="https://github.com/usergrid/usergrid-html5-sdk">HTML5/JS</a> but also <a href="https://github.com/usergrid/usergrid-rails-sdk">Ruby on Rails</a>, pure <a href="https://github.com/usergrid/usergrid-ruby-sdk">Ruby</a>, <a href="https://github.com/usergrid/usergrid-nodejs-sdk">node.js</a>, server-side <a href="https://github.com/usergrid/usergrid-java-sdk">Java</a>, <a href="https://github.com/usergrid/usergrid-.net-sdk">.NET / Windows Phone</a> and <a href="https://github.com/usergrid/usergrid-php-sdk">PHP</a>!</p>
             </div>
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-file"></i></div>
-                <h3>File</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <div class="bf-icon-wrap"><span aria-hidden="true" class="icon-road"></span></div>
+                <h3>Java-based</h3>
+                <p>We build on standard Java components, such as Jersey, Jackson, Apache Cassandra and Lucene. That means you get operational predictability, all the benefits of the JVM, and easy extensibility.</p>
             </div>
             <div class="col-md-4">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-user"></i></div>
-                <h3>Users</h3>
-                <p>We can blarblarblarblarblarblar Usergrid is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database,</p>
+                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-lock"></i></div>
+                <h3>Trusted</h3>
+                <p>Usergrid is deployed by <a href="https://baas.io/">Korea Telecom</a>, <a href="http://globo.com">Globo</a>, <a href="http://apigee.com">Apigee</a> and many Fortune 500 companies. Our biggest deployments have hundreds of nodes and handle millions of users.</p>
             </div>   
         </div>
     </div>
@@ -120,11 +123,27 @@
     </div>
 </section>
 
+<section class="bf-questions">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">Interested? You can <a href="https://github.com/usergrid/usergrid-stack#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> or <a href="https://groups.google.com/forum/#!forum/usergrid" class="btn btn-inverse btn-lg">Ask a Question on the Mailing-List</a></div>
+    </div>
+</section
+
 <section class="bf-news">
     <div class="container">
-        <h2>News</h2>
+        
         <div class="row">
             <div class="col-md-8 text-left">
+                <h2>About the Project</h2>
+                <p>Apache Usergrid (incubating) is an open-source Backend-as-a-Service (“BaaS” or “mBaaS”) composed of an integrated distributed NoSQL database, application layer and client tier with SDKs for developers looking to rapidly build web and/or mobile applications. It provides elementary services (user registration & management, data storage, file storage, queues) and retrieval features (full text search, geolocation search, joins) to power common app features.</p>
+
+                <p>It is a multi-tenant system designed for deployment to public cloud environments (such as Amazon Web Services, Rackspace, etc.) or to run on traditional server infrastructures so that anyone can run their own private BaaS deployment.</p>
+
+                <p>For architects and back-end teams, it aims to provide a distributed, easily extendable, operationally predictable and highly scalable solution. For front-end developers, it aims to simplify the development process by enabling them to rapidly build and operate mobile and web applications without requiring backend expertise.</p>
+            </div>
+            <div class="col-md-4 text-left">
+                    <h2>Recent Releases</h2>
                     <h4>Released 24, September, 2013</h4>
                     <ul>
                         <li>Modify user authenticate</li>
@@ -149,71 +168,81 @@
                         <li>Adding user property</li>
                     </ul>
             </div>
-            <div class="col-md-4">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23usergrid" data-widget-id="387889076243685376">"#usergrid" 관련 트윗</a>
+            <!--<div class="col-md-4">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=usergrid" data-widget-id="389588441240829952" data-chrome="transparent">Tweets about "usergrid"</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-            </div>
+            </div>-->
         </div>
+
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <h2>Usergrid Adopters</h2>
-    </div>
-</section>
+
 
 <footer class="bf-footer" role="contentinfo">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
                 <ul class="nav nav-list">
-                    <li class="nav-header">Overview</li>
-                    <li><a href="#">Usergird</a></li>
+                    <li class="nav-header">Pages</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Docs</a></li>
                     <li><a href="#">Team</a></li>
+                    <li><a href="#">Adopters</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <ul class="nav nav-list">
-                    <li class="nav-header">Using</li>
-                    <li><a href="#">Usergird</a></li>
-                    <li><a href="#">Team</a></li>
+                    <li class="nav-header">Code</li>
+                    <li><a href="#">Server Stack</a></li>
+                    <li><a href="#">iOS SDK</a></li>
+                    <li><a href="#">Android SDK</a></li>
+                    <li><a href="#">HTML5/JS SDK</a></li>
+                    <li><a href="#">node.js module</a></li>
+                    <li><a href="#">Ruby on Rails gem</a></li>
+                    <li><a href="#">Ruby gem</a></li>
+                    <li><a href="#">PHP SDK</a></li>
+                    <li><a href="#">Java SDK</a></li>
+                    <li><a href="#">.NET / Windows Phone SDK</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <ul class="nav nav-list">
-                    <li class="nav-header">Documents</li>
-                    <li><a href="#">Usergird</a></li>
-                    <li><a href="#">Team</a></li>
+                    <li class="nav-header">Apache Tools</li>
+                    <li><a href="#">Mailing List (devs)</a></li>
+                    <li><a href="#">Mailing List (commits)</a></li>
+                    <li><a href="http://incubator.apache.org/projects/usergrid.html">Podling Listing</a></li>
+                    <li><a href="#">Bug Tracker</a></li>
+                    <li><a href="#">Apache Repository</a></li>
                 </ul>
             </div>
             <div class="col-md-2">
                 <ul class="nav nav-list">
                     <li class="nav-header">Community</li>
+                    <li><a href="https://groups.google.com/forum/#!forum/usergrid">Mailing-list (users)</a></li>
                     <li><a href="http://github.com/usergrid">Github</a></li>
                     <li><a href="http://stackoverflow.com/search?q=usergrid">StackOverflow</a></li>
                     <li><a href="https://twitter.com/usergrid">Twitter</a></li>
                     <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4">IRC</a></li>
-                    <li><a href="https://groups.google.com/forum/#!forum/usergrid">Mailing-list</a></li>
+                    
                 </ul>
             </div>
             <div class="col-md-4">
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23usergrid" data-widget-id="389588441240829952" data-related="usergrid" height="400px">Tweets about "#usergrid"</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div> 
+
+            <!--<div class="col-md-4">
                 <div class="input-group form-search">
                     <input type="text" class="form-control search-query">
                     <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary" data-type="last">Search</button>
                     </span>
                 </div>
-            </div>
+            </div>-->
         </div>
         <div class="row">
-            <div id="footer-icons">
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-google-plus"></i></div>
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-facebook"></i></div>
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-twitter"></i></div>
-                <div class="bf-icon-wrap"><i aria-hidden="true" class="icon-github"></i></div>
-            </div>
             <div id="copyright">
                 Copyright © 2013 The Apache Software Foundation, Licensed under the Apache License, Version 2.0.<br>
                 Apache and the Apache feather logos are trademarks of The Apache Software Foundation.
@@ -226,7 +255,6 @@
 <script type="text/javascript">
     head.js("js/jquery-1.10.1.min.js", "js/bootstrap.min.js", "js/usergrid-site.js");
 </script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <script type="text/javascript">
     //IE outdate friendly warning if you don't want remove it
     var $buoop = {vs:{i:8,f:3.6,o:10.6,s:3.2,n:9}}
