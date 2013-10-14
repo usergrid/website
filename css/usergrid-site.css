@@ -248,6 +248,7 @@ li.divider {
   font-size: 300%;
   margin-bottom: 0;
   color: white;
+  line-height: 90%;
 }
 .bf-masthead .tagline em {
   font-style: italic;
@@ -256,10 +257,33 @@ li.divider {
   font-style: normal;
   font-size: 150%;
   margin-bottom: 40px;
+  line-height: 100%;
 }
 .bf-masthead .btn-wrapper {
   text-align: center;
   margin-bottom: 20px;
+  clear:both;
+}
+.bf-masthead .btn-wrapper {
+  text-align: left;
+  width: 100%;
+  margin-right: 20px;
+}
+.bf-masthead .social-btn {
+  float: left;
+}
+.bf-masthead .or {
+  margin-left: 0px;
+  font-style: normal;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.bf-masthead a {
+  line-height: 30px;
+  color: #FAFBFC;
+  font-style: normal;
+  font-weight: 400;
 }
 .bf-masthead h1 {
   font-size: 30px;
@@ -902,6 +926,35 @@ section > .container > h2 {
   margin-bottom: 0;
 }
 
+/* Phone and below */
+@media screen and (max-width: 768px) {
+  .bf-masthead .tagline {
+    line-height: 90%;
+    padding-bottom: 20px;
+  }
+  .bf-masthead .description {
+    margin-bottom: 30px;
+  }
+  .bf-masthead p {
+    clear:both;
+    line-height: 100%;
+    padding-top: 5px;
+  }
+  .bf-masthead .or {
+    margin-right: 0;
+  }
+}
+
+/* Phones and Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+  .bf-masthead .tagline {
+    padding-bottom: 20px;
+  }
+
+}
+
+
 /* Tablets and up */
 @media screen and (min-width: 768px) {
 
@@ -912,6 +965,14 @@ section > .container > h2 {
   .bf-header h1 {
     font-size: 60px;
     line-height: 1;
+  }
+
+  .bf-masthead p {
+    float:left;
+  }
+
+  .bf-masthead .or {
+    margin-right: 10px;
   }
 
   .bf-docs-container {
@@ -967,18 +1028,10 @@ section > .container > h2 {
     margin-top: 40px;
   }
 
-  .bf-masthead .tagline {
+  .bf-masthead .tagline, .bf-masthead .description, .bf-masthead .btn-wrapper {
     margin-left: 140px;
   }
 
-  .bf-masthead .description {
-    margin-left: 140px;
-  }
-
-  .bf-masthead .btn-wrapper {
-    margin-left: 140px;
-    text-align: left;
-  }
 }
 
 .navbar-toggle {
