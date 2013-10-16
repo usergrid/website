@@ -76,6 +76,7 @@ h1 {
 }
 h2 {
   font-weight: 400;
+  margin-top: 60px !important;
   margin-bottom: 10px !important;
 }
 section > .container > h2 {
@@ -176,14 +177,6 @@ h3 {
 
 /* Navs and headers
 -------------------------------------------------- */
-.logo-small {
-  width: 250px;
-  height: 30px;
-  background-size: 250px 30px;
-  color: transparent;
-  background-image: url('../img/apache_usergrid_logo_white_small.png');
-}
-
 header.navbar.secondary {
   box-shadow: 0px 1px 2px rgb(36,129,166);
 }
@@ -234,7 +227,7 @@ li.divider {
 .bf-masthead {
   position: relative;
   text-align: left;
-  background: #cbcbcd url(../img/rende.png) no-repeat 50% 100px;
+  /*background: #cbcbcd url(../img/rende.png) no-repeat 50% 100px;*/
 }
 .bf-masthead .bf-masthead-bg {
     /*margin-top: 10px;*/
@@ -363,10 +356,6 @@ section > .container > h2 {
   text-align: center;
   padding: 20px 0;
 }
-.bf-features .row {
-  padding: 20px 0;
-} 
-
 .bf-features h2 ~ p {
   margin-bottom: 40px;
   font-size: 16px;
@@ -957,6 +946,13 @@ section > .container > h2 {
 
 /* Phone and below */
 @media screen and (max-width: 768px) {
+  div.cta {
+    line-height: 60px;
+  }
+  span.avoidwrap { display:inline-block; }
+  .navbar-nav > li > a {
+    opacity: 1.0;
+  }
   .bf-masthead .tagline {
     line-height: 90%;
   }
@@ -974,18 +970,17 @@ section > .container > h2 {
 }
 
 /* Phones and Tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/*@media screen and (min-width: 768px) and (max-width: 992px) {
   
   .bf-masthead .tagline {
     padding-bottom: 20px;
   }
 
-}
+}*/
 
 
 /* Tablets and up */
 @media screen and (min-width: 768px) {
-
   .bf-header {
     font-size: 21px;
     text-align: left;
@@ -1002,7 +997,9 @@ section > .container > h2 {
   .bf-masthead .or {
     margin-right: 10px;
   }
-
+  .bf-features .row {
+    padding: 20px 0;
+  } 
   .bf-docs-container {
     margin-top: 80px;
   }
