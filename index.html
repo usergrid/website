@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
         </button>
         <a href="index.html" class="navbar-brand">
-            <img id="home-logo" style="opacity:0" src="img/usergrid_160.png" />
+            <img id="home-logo" src="img/apache_usergrid_logo_white_small.png" />
         </a>
     </div>
     <nav class="collapse navbar-collapse bf-navbar-collapse" role="navigation">
@@ -52,9 +52,9 @@
             <li><a href="http://github.com/usergrid"><span class="icns icon-github-sign">&nbsp;</span></a></li>
             <li><a href="https://trello.com/b/exQmJIOn/usergrid"><span class="icns icon-trello">&nbsp;</span></a></li>
             <li><a href="http://stackoverflow.com/search?q=usergrid"><span class="icns icon-stackexchange">&nbsp;</span></a></li>
-            <li><a href="https://twitter.com/usergrid"><span class="icns icon-twitter">&nbsp;</span></a></li>
             <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4"><span class="icns icon-comments">&nbsp;</span></a></li>
             <li><a href="https://groups.google.com/forum/#!forum/usergrid"><span class="icns icon-envelope">&nbsp;</span></a></li>
+            <li><a href="https://twitter.com/usergrid"><span class="icns icon-twitter">&nbsp;</span></a></li>
         </ul>
     </nav>
 </div>
@@ -64,7 +64,7 @@
 <section class="bf-masthead" id="content" role="main">
     <div class="bf-masthead-bg">
         <div class="container">
-            <img class="logo-title img-responsive" src="img/apache_usergrid_logo_white.png" />
+            <img class="logo-title img-responsive hidden-xs" src="img/apache_usergrid_logo_white.png" />
             <div class="text-container">
                 <h2 class="tagline">The BaaS <em>not</em> made for Hipsters</h2>
                 <p class="description">Designed for multi-tenancy &amp; operational predictability. Built on Java 7, Jersey &amp; Cassandra, with SDKs for iOS, Android, HTML5/JS, node.js, Java, .NET, PHP and more.
@@ -73,8 +73,8 @@
             </div>
             
             <div class="btn-wrapper">
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
+                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
+                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
                 <p><span class="or">or</span> <a href="#">Download Apache Usergrid 0.1</a></p>
             </div>
             
@@ -125,8 +125,9 @@
 
 <section class="bf-questions">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center cta">Interested? You can <a href="https://github.com/usergrid/usergrid-stack#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="https://groups.google.com/forum/#!forum/usergrid" class="btn btn-inverse btn-lg">Ask a Question on the Mailing-List</a></span></div>
+            <div class="col-md-12 text-center cta">
+                Interested? You can <a href="https://github.com/usergrid/usergrid-stack#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="https://groups.google.com/forum/#!forum/usergrid" class="btn btn-inverse btn-lg">Ask a Question on the List</a></span>
+            </div>
     </div>
 </section
 
@@ -220,16 +221,17 @@
             <div class="col-md-2">
                 <ul class="nav nav-list">
                     <li class="nav-header">Community</li>
-                    <li><a href="https://groups.google.com/forum/#!forum/usergrid">Mailing-list (users)</a></li>
-                    <li><a href="http://github.com/usergrid">Github</a></li>
-                    <li><a href="http://stackoverflow.com/search?q=usergrid">StackOverflow</a></li>
-                    <li><a href="https://twitter.com/usergrid">Twitter</a></li>
-                    <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4">IRC</a></li>
                     
+                    <li><a href="http://github.com/usergrid">Github</a></li>
+                    <li><a href="https://trello.com/b/exQmJIOn/usergrid">Trello</span></a>
+                    <li><a href="http://stackoverflow.com/search?q=usergrid">StackOverflow</a></li>
+                    <li><a href="http://webchat.freenode.net/?channels=%23usergrid&uio=d4">IRC</a></li>
+                    <li><a href="https://groups.google.com/forum/#!forum/usergrid">Mailing-list (users)</a></li>
+                    <li><a href="https://twitter.com/usergrid">Twitter</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=%23usergrid" data-widget-id="389588441240829952" data-related="usergrid" height="400px">Tweets about "#usergrid"</a>
+                <a class="twitter-timeline" href="https://twitter.com/search?q=%23usergrid" data-widget-id="389588441240829952" data-related="usergrid" height="400px" style="overflow:hidden">Tweets about "#usergrid"</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div> 
 
