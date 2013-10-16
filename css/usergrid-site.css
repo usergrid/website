@@ -22,11 +22,6 @@ h5, h6, .h5, .h6 {
   font-weight: 300 !important;
   font-size: 120%;
 }
-
-.navbar-nav >li .icns {
-  font-size: 140%;
-}
-
 .nav-list > li {
   opacity: 0.8;
 }
@@ -39,9 +34,11 @@ li.nav-header {
   padding-left: 0 !important;
 }
 .navbar-nav > li > a {
+  font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   font-weight: 300 !important;
   opacity: 0.8;
 }
+
 .navbar-nav > li > a.major {
   font-weight: 400 !important;
   opacity: 1.0;
