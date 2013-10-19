@@ -59,6 +59,9 @@ module Jekyll
 
         def convert(content)
           extensions = config_option('extensions', [])
+          if extensions['template'] and !extensions['template'].start_with? '/'
+          	extensions['template'] = Dir.getwd+'/'+extensions['template']
+          end
           format = config_option('format', 'html5')
 
           PandocRuby.new(content, *extensions).send("to_#{format}")

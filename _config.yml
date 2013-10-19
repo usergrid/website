@@ -1,4 +1,9 @@
 name: Apache Usergrid Documentation
 markdown: pandoc
+pandoc:
+  extensions:
+    smart: ''
+    toc: ''
+    template: '_plugins/pandoc.template'
 pygments: true
 permalink: /:categories/:title
