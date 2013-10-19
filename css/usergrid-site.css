@@ -14,7 +14,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   font-weight: 300;
 }
-h2>a:hover {text-decoration: none;}
+h2>a:hover, h3>a:hover {text-decoration: none;}
 h2:hover>a:before {
   content: "\F0C1";
   font-family: 'FontAwesome';
@@ -22,6 +22,14 @@ h2:hover>a:before {
   left: -12px;
   padding-top: 6px;
   font-size: 20px;
+}
+h3:hover>a:before {
+  content: "\F0C1";
+  font-family: 'FontAwesome';
+  position:absolute;
+  left: -10px;
+  padding-top: 5px;
+  font-size: 17px;
 }
 h5, h6, .h5, .h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
