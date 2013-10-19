@@ -2,7 +2,7 @@ var start = 40;
 var end = 210;
 
 function setHeaderForScroll(scrollTop) {
-  if ($( window ).width() > 768) {
+  if ( ($( window ).width() > 768) && ($('header.secondary').length == 0) ) {
 
     if(scrollTop > start) {
         opacity = (Math.floor(scrollTop) - start)/end;

@@ -17,6 +17,9 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 h5, h6, .h5, .h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
+.nav-list {
+  padding-top: 90px;
+}
 .navbar-nav > li, .nav-list > li {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300 !important;
@@ -32,6 +35,7 @@ li.nav-header {
   font-weight: 600 !important;
   opacity: 1.0;
   padding-left: 0 !important;
+  padding-top: 0;
 }
 .navbar-nav > li > a {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
@@ -1016,6 +1020,7 @@ section > .container > h2 {
 
 /* Tablets and up */
 @media screen and (min-width: 768px) {
+  header.secondary #home-logo { opacity: 1; }
   #home-logo { opacity: 0; height: 30px;}
   .bf-header {
     font-size: 21px;
@@ -1080,14 +1085,19 @@ section > .container > h2 {
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   span.icns {
     font-size: 140%;
   }
 }
 
 /* Tablets/desktops and up */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  span.icon-book:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: "Docs";
+  }
   span.icon-github-sign:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
