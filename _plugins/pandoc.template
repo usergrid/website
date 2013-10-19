@@ -1,5 +1,5 @@
 <div class="toc">
-	<h2>Table of Contents</h2>
+	<h4>Table of Contents</h4>
 	$toc$
 </div>
 $body$

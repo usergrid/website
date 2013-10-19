@@ -29,7 +29,7 @@ function setHeaderForScroll(scrollTop) {
 
 $(document).ready(function() {
 
-    $('table').addClass('table table-striped').css("width", "+=5px");
+    $('table').addClass('table');
 
     // Detect initial scroll on page load
     setHeaderForScroll($("body").scrollTop());
