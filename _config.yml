@@ -1,3 +1,4 @@
 name: Apache Usergrid Documentation
 markdown: pandoc
 pygments: true
+permalink: /:categories/:title
