@@ -8,10 +8,48 @@ secondary: true
         <div class="col-md-3">
             <div class="bf-sidebar hidden-print" role="complementary">
                 <ul class="nav nav-list">
-                    <li class="nav-header">Usergird</li>
-                    {% for post in site.posts %}
+                    <li class="nav-header"><span>Concepts</span></li>
+                    <li><a href="#">Organizations, Applications & Admins</a></li>
+                    <li>
+                        <a href="#">Collections</a>
+                        <ul>
+                            <li><a href="#">Query Language</a></li>
+                            <li><a href="#">Users & Devices</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Groups</a></li>
+                            <li><a href="#">Roles & Permissions</a></li>
+                            <li><a href="#">Assets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Queues</a></li>
+                    <li><a href="#">Events & Counters</a></li>
+
+
+                    <li class="nav-header"><span>Usage</span></li>
+                    <li><a href="#">REST API</a></li>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Android</a></li>
+                    <li><a href="#">HTML5/JavaScript</a></li>
+                    <li><a href="#">node.js</a></li>
+                    <li><a href="#">Ruby</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">.NET</a></li>
+
+
+                    <li class="nav-header"><span>Internals</span></li>
+                    <li><a href="#">Design & Goals</a></li>
+                    <li><a href="#">Java Architecture</a></li>
+                    <li><a href="#">Cassandra Schema</a></li>
+                    <li><a href="#">Getting up & Running Locally</a></li>
+
+
+                    <li class="nav-header"><span>Operations</span></li>
+                    <li><a href="#">Deployment Guide</a></li>
+                    <li><a href="#">Security</a></li>
+                    <!--{% for post in site.posts %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
+                    {% endfor %}-->
                 </ul>
             </div>
         </div>
@@ -20,6 +58,7 @@ secondary: true
             <div class="page-article">
                 <div class="page-header">
                     <h1>{{ page.title }}</h1>
+                    <small><a href="https://github.com/timanglade/usergrid-site/blob/master/{{ page.path }}">see the github source for this article</a></small>
                 </div>
                 {{ content }}
             </div>

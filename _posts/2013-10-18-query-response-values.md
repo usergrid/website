@@ -4,9 +4,6 @@ category: docs
 layout: docs
 ---
 
-Query response values
-=====================
-
 When you query Apache Usergrid data, the query’s response is formatted in
 JavaScript Object Notation (JSON). This is a common format used for
 parameter and return values in REST web services.
@@ -34,51 +31,53 @@ users). That one member gives the UUID of the entity (user), the entity
 type, and values for properties such as name, username, email, and so
 on.
 
-    {
-      "action" : "get",
-      "application" : "8272c9b0-d86a-11e2-92e2-cdf1ce04c1c0",
-      "params" : {
-        "ql" : [ "select * where name = 'Gladys Kravitz'" ]
+```js
+{
+  "action" : "get",
+  "application" : "8272c9b0-d86a-11e2-92e2-cdf1ce04c1c0",
+  "params" : {
+    "ql" : [ "select * where name = 'Gladys Kravitz'" ]
+  },
+  "path" : "/users",
+  "uri" : "http://api.usergrid.com/myorg/myapp/users",
+  "entities" : [ {
+    "uuid" : "d0d7d0ba-e97b-11e2-8cef-411c466c4f2c",
+    "type" : "user",
+    "name" : "Gladys Kravitz",
+    "created" : 1373472876859,
+    "modified" : 1373472876859,
+    "username" : "gladys",
+    "email" : "gladys@example.com",
+    "activated" : true,
+    "picture" : "http://www.gravatar.com/avatar/20c57d4f41cf51f2db44165eb058b3b2",
+    "metadata" : {
+      "path" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c",
+      "sets" : {
+        "rolenames" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/rolenames",
+        "permissions" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/permissions"
       },
-      "path" : "/users",
-      "uri" : "http://api.usergrid.com/myorg/myapp/users",
-      "entities" : [ {
-        "uuid" : "d0d7d0ba-e97b-11e2-8cef-411c466c4f2c",
-        "type" : "user",
-        "name" : "Gladys Kravitz",
-        "created" : 1373472876859,
-        "modified" : 1373472876859,
-        "username" : "gladys",
-        "email" : "gladys@example.com",
-        "activated" : true,
-        "picture" : "http://www.gravatar.com/avatar/20c57d4f41cf51f2db44165eb058b3b2",
-        "metadata" : {
-          "path" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c",
-          "sets" : {
-            "rolenames" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/rolenames",
-            "permissions" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/permissions"
-          },
-          "connections" : {
-            "firstname" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/firstname",
-            "lastname" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/lastname"
-          },
-          "collections" : {
-            "activities" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/activities",
-            "devices" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/devices",
-            "feed" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/feed",
-            "groups" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/groups",
-            "roles" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/roles",
-            "following" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/following",
-            "followers" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/followers"
-          }
-        }
-      } ],
-      "timestamp" : 1374694196061,
-      "duration" : 48,
-      "organization" : "myorg",
-      "applicationName" : "myapp",
-      "count" : 1
+      "connections" : {
+        "firstname" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/firstname",
+        "lastname" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/lastname"
+      },
+      "collections" : {
+        "activities" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/activities",
+        "devices" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/devices",
+        "feed" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/feed",
+        "groups" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/groups",
+        "roles" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/roles",
+        "following" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/following",
+        "followers" : "/users/d0d7d0ba-e97b-11e2-8cef-411c466c4f2c/followers"
+      }
     }
+  } ],
+  "timestamp" : 1374694196061,
+  "duration" : 48,
+  "organization" : "myorg",
+  "applicationName" : "myapp",
+  "count" : 1
+}
+```
 
 Compare the preceding example with the following for another kind of
 query. Imagine the following request string, where the query string is

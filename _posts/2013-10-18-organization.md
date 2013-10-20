@@ -4,12 +4,6 @@ category: docs
 layout: docs
 ---
 
-Organization
-============
-
-[See all management
-resources](/docs/usergrid/content/management-resources)[![](/docs/sites/docs/files/learnmore%20arrow_0.png)](/docs/usergrid/content/management-resources)
-
 An organization represents the highest level of the Apache Usergrid data
 hierarchy. It contains applications (and the entities and collections
 they contain) and is associated with one or more administrators. An
@@ -80,9 +74,11 @@ The password of the administrator.
 -   [Ruby](#ruby_create_org)
 -   [Node.js](#nodejs_create_org)
 
-<!-- -->
 
-    curl -X -i POST "https://api.usergrid.com/management/orgs" -d '{"password":"test12345","email":"tester123@hotmail.com","name":"test","username":"test123","organization":"testorg"}'
+```bash
+$ curl -X POST "https://api.usergrid.com/management/orgs" \
+       -d '{"password":"test12345","email":"tester123@hotmail.com","name":"test","username":"test123","organization":"testorg"}'
+```
 
 It is recommended that you use the [Admin
 Portal](http://apigee.com/usergrid) for administrative activities
@@ -95,57 +91,63 @@ Console](/docs/usergrid/content/displaying-app-services-api-calls-curl-commands)
 The example assumes use of the [Ruby
 SDK](https://github.com/scottganyo/usergrid_iron).
 
-    mgmt = Usergrid::Management.new 'https://api.usergrid.com/'
-    management.create_organization 'testorg', 'test123', 'test', 'tester123@hotmail.com', 'test12345'
+````ruby
+mgmt = Usergrid::Management.new 'https://api.usergrid.com/'
+management.create_organization 'testorg', 'test123', 'test', 'tester123@hotmail.com', 'test12345'
+````
 
 The example assumes use of the [Node.js
 module](https://github.com/apigee/usergrid-node-module).
 
-    var options = {
-        method:'POST',
-        endpoint:'management/orgs',
-        body:{ 
-              password:'test12345', 
-              email:'tester12345@gmail.com', 
-              name:'test', 
-              username:'tes123', 
-              organization:'testorg' 
-        }    
-    };
-    client.request(options, function (err, data) {
-        if (err) {
-            //error — POST failed
-        } else {
-            //success — data will contain raw results from API call        
-        }
-    });
+```javascript
+var options = {
+    method:'POST',
+    endpoint:'management/orgs',
+    body:{ 
+          password:'test12345', 
+          email:'tester12345@gmail.com', 
+          name:'test', 
+          username:'tes123', 
+          organization:'testorg' 
+    }    
+};
+client.request(options, function (err, data) {
+    if (err) {
+        //error — POST failed
+    } else {
+        //success — data will contain raw results from API call        
+    }
+});
+```
 
 ### Example - Response
 
-    {
-      "action": "new organization",
-      "status": "ok",
-      "data":  {
-        "owner":  {
-          "applicationId": "00000000-0000-0000-0000-000000000001",
-          "username": "tester123",
-          "name": "test",
-          "email": "tester123@hotmail.com",
-          "activated": false,
-          "disabled": false,
-          "uuid": "48c92c73-0d7e-11e2-98b9-12313d288ee0",
-          "adminUser": true,
-          "displayEmailAddress": "tester123 <tester123@hotmail.com>",
-          "htmldisplayEmailAddress": "tester123 <<a href="mailto:tester123@hotmail.com">tester123@hotmail.com</a>>"
-        },
-        "organization":  {
-          "name": "testorg",
-          "uuid": "5de0bb69-0d7f-11e2-87b9-12313d288ff0"
-        }
-      },
-      "timestamp": 1349284674173,
-      "duration": 21376
+```javascript
+{
+  "action": "new organization",
+  "status": "ok",
+  "data":  {
+    "owner":  {
+      "applicationId": "00000000-0000-0000-0000-000000000001",
+      "username": "tester123",
+      "name": "test",
+      "email": "tester123@hotmail.com",
+      "activated": false,
+      "disabled": false,
+      "uuid": "48c92c73-0d7e-11e2-98b9-12313d288ee0",
+      "adminUser": true,
+      "displayEmailAddress": "tester123 <tester123@hotmail.com>",
+      "htmldisplayEmailAddress": "tester123 <<a href="mailto:tester123@hotmail.com">tester123@hotmail.com</a>>"
+    },
+    "organization":  {
+      "name": "testorg",
+      "uuid": "5de0bb69-0d7f-11e2-87b9-12313d288ff0"
     }
+  },
+  "timestamp": 1349284674173,
+  "duration": 21376
+}
+```
 
 Getting an organization
 -----------------------
@@ -176,9 +178,9 @@ clients](/authenticating-users-and-application-clients) for details.
 -   [Ruby](#ruby_get_org)
 -   [Node.js](#nodejs_get_org)
 
-<!-- -->
-
-    curl -X GET "https://api.usergrid.com/management/orgs/testorg"
+```bash
+curl -X GET "https://api.usergrid.com/management/orgs/testorg"
+```
 
 It is recommended that you use the [Admin
 Portal](http://apigee.com/usergrid) for administrative activities
@@ -191,51 +193,58 @@ Console](/docs/usergrid/content/displaying-app-services-api-calls-curl-commands)
 The example assumes use of the [Ruby
 SDK](https://github.com/scottganyo/usergrid_iron).
 
-    mgmt = Usergrid::Management.new 'https://api.usergrid.com/'
-    org = mgmt.organization 'testorg'
+```ruby
+mgmt = Usergrid::Management.new 'https://api.usergrid.com/'
+org = mgmt.organization 'testorg'
+```
 
 The example assumes use of the [Node.js
 module](https://github.com/apigee/usergrid-node-module).
 
-    var options = {
-        method:'GET',
-        endpoint:'management/orgs/testorg'
-    };
-    client.request(options, function (err, data) {
-        if (err) {
-            //error — GET failed
-        } else {
-            //success — data will contain raw results from API call        
-        }
-    });
+```javascript
+var options = {
+    method:'GET',
+    endpoint:'management/orgs/testorg'
+};
+client.request(options, function (err, data) {
+    if (err) {
+        //error — GET failed
+    } else {
+        //success — data will contain raw results from API call        
+    }
+});
+```
 
 ### Example - Response
 
-    {
-      "timestamp": 1349286861746,
-      "duration": 18,
-      "organization":  {
-        "users":  {
-          "tester123":  {
-            "applicationId": "00000000-0000-0000-0000-000000000001",
-            "username": "tester123",
-            "name": "test",
-            "email": "tester123@hotmail.com",
-            "activated": true,
-            "disabled": false,
-            "uuid": "327b527f-cd0c-11e1-bcf7-12313d1c4491",
-            "adminUser": true,
-            "displayEmailAddress": "tester123 <tester123@hotmail.com>",
-            "htmldisplayEmailAddress": "tester123 <<a href="mailto:tester123@hotmail.com">tester123@hotmail.com</a>>"
-          }
-        },
-        "name": "testorg",
-        "applications":  {
-          "tester123/sandbox": "3400ba10-cd0c-11e1-bcf7-12313d1c4491",
-          "tester123/testapp1": "be08a5f9-fdd3-11e1-beca-12313d027471",
-          "tester123/testapp2": "cede5b7e-fe90-11e1-95c8-12313b122c56"
-        },
-        "uuid": "33dd0563-cd0c-11e1-bcf7-12313d1c4491"
+```javascript
+{
+  "timestamp": 1349286861746,
+  "duration": 18,
+  "organization":  {
+    "users":  {
+      "tester123":  {
+        "applicationId": "00000000-0000-0000-0000-000000000001",
+        "username": "tester123",
+        "name": "test",
+        "email": "tester123@hotmail.com",
+        "activated": true,
+        "disabled": false,
+        "uuid": "327b527f-cd0c-11e1-bcf7-12313d1c4491",
+        "adminUser": true,
+        "displayEmailAddress": "tester123 <tester123@hotmail.com>",
+        "htmldisplayEmailAddress": "tester123 <<a href="mailto:tester123@hotmail.com">tester123@hotmail.com</a>>"
+      }
+    },
+    "name": "testorg",
+    "applications":  {
+      "tester123/sandbox": "3400ba10-cd0c-11e1-bcf7-12313d1c4491",
+      "tester123/testapp1": "be08a5f9-fdd3-11e1-beca-12313d027471",
+      "tester123/testapp2": "cede5b7e-fe90-11e1-95c8-12313b122c56"
+    },
+    "uuid": "33dd0563-cd0c-11e1-bcf7-12313d1c4491"
+  }
+```
 
 Activating an organization
 --------------------------
