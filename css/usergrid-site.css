@@ -69,6 +69,41 @@ header .navbar-nav {
 .nav-list > li > a {
   padding: 0;
 }
+.nav-list > li > a.icns-apple:before {
+  text-align: right;
+  content: "\F179";
+  font-family: 'FontAwesome';
+  font-size: 100%;
+  margin-left: -17px;
+  padding-right: 4px;
+  line-height: 0;
+}
+.nav-list > li > a.icns-android:before {
+  text-align: right;
+  content: "\F17B";
+  font-family: 'FontAwesome';
+  font-size: 110%;
+  margin-left: -18px;
+  padding-right: 8px;
+  line-height: 0;
+}
+.nav-list > li > a.icns-html5:before {
+  text-align: right;
+  content: "\F13B";
+  font-family: 'FontAwesome';
+  font-size: 100%;
+  margin-left: -18px;
+  padding-right: 8px;
+  line-height: 0;
+}
+.nav-list > li > a.icns-windows:before {
+  text-align: right;
+  content: "\F17A";
+  font-family: 'FontAwesome';
+  margin-left: -19px;
+  padding-right: 8px;
+  line-height: 0;
+}
 li.nav-header {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600 !important;
