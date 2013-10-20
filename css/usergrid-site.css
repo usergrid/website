@@ -292,6 +292,13 @@ code > span.al { color: #ff0000; }
 code > span.er { font-weight: bold; }
 /* Navs and headers
 -------------------------------------------------- */
+header.navbar .container {
+  padding-right: 0;
+}
+footer > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
 header.navbar.secondary {
   box-shadow: 0px 1px 2px rgb(36,129,166);
 }
@@ -317,7 +324,7 @@ nav.navbar-collapse {
   padding-left: 0;
 }
 .bf-docs-nav .navbar-nav > li > a {
-  margin: 10px 5px 0;
+  margin: 10px 0 0 10px;
   padding: 10px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
