@@ -320,21 +320,6 @@ div.row > div.text-left > h2 {
   background-color: #563d7c;
   border-color: #563d7c;
 }
-/* Haddock-style syntax highlighting
--------------------------------------------------- */
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode, pre.sourceCode {
-  background-color: #eee;
-}
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #0000ff; }
-code > span.ch { color: #008080; }
-code > span.st { color: #008080; }
-code > span.co { color: #008000; }
-code > span.ot { color: #ff4000; }
-code > span.al { color: #ff0000; }
-code > span.er { font-weight: bold; }
 /* Navs and headers
 -------------------------------------------------- */
 header.navbar .container {
@@ -958,7 +943,6 @@ section > .container > h2 {
 .highlight {
   padding: 9px 14px;
   margin-bottom: 40px;
-  background-color: #FAFBFC;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
 }
@@ -966,12 +950,13 @@ section > .container > h2 {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  background-color: transparent;
+  background-color: rgb(248, 248, 255);
   border: 0;
   white-space: nowrap;
 }
 .highlight pre code {
   font-size: inherit;
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
   color: #333; /* Effectively the base text color */
 }
 .highlight pre .lineno {
@@ -983,7 +968,6 @@ section > .container > h2 {
   color: #bebec5;
 }
 
-.hll { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */
 .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .k { color: #000000; font-weight: bold } /* Keyword */

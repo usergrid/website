@@ -2,3 +2,5 @@
 *.iml
 .DS_Store
 _site/
+output/
+tmp/
