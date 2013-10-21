@@ -102,8 +102,8 @@ header .navbar-nav {
   text-align: right;
   content: "\F17A";
   font-family: 'FontAwesome';
-  margin-left: -18px;
-  padding-right: 8px;
+  margin-left: -19px;
+  padding-right: 7px;
   line-height: 0;
 }
 li.nav-header {
@@ -1116,35 +1116,40 @@ section > .container > h2 {
 /* Phone and below */
 @media screen and (max-width: 768px) {
   #home-logo { opacity: 1; height: 25px;}
+  span.icon-book:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: " Docs";
+  }
   span.icon-github-sign:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Github";
+    content: " Github";
   }
   span.icon-trello:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Trello";
+    content: " Trello";
   }
   span.icon-stackexchange:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "StackOverflow";
+    content: " StackOverflow";
   }
   span.icon-twitter:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Twitter";
+    content: " Twitter";
   }
   span.icon-comments:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "IRC";
+    content: " IRC";
   }
   span.icon-envelope:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Mailing List";
+    content: " Mailing List";
   }
   div.cta {
     line-height: 60px;
@@ -1181,7 +1186,18 @@ section > .container > h2 {
 
 }*/
 
-
+/* Tablets and below */
+@media screen and (max-width: 1200px) {
+  .row {
+    padding: 0 25px;
+  }
+  .bf-docs-container .nav-list {
+    padding-left: 30px;
+  }
+  .bf-docs-container .col-md-3 .nav-list {
+    padding-top: 0;
+  }
+}
 /* Tablets and up */
 @media screen and (min-width: 768px) {
   header.secondary #home-logo { opacity: 1; }
@@ -1205,10 +1221,6 @@ section > .container > h2 {
   .bf-features .row {
     padding: 20px 0;
   } 
-  .bf-docs-container {
-    margin-top: 80px;
-  }
-
   .bf-example {
     margin-left: 0;
     margin-right: 0;
@@ -1260,37 +1272,37 @@ section > .container > h2 {
   span.icon-book:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Docs";
+    content: " Docs";
   }
   span.icon-github-sign:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Github";
+    content: " Github";
   }
   span.icon-trello:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Trello";
+    content: " Trello";
   }
   span.icon-stackexchange:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "StackOverflow";
+    content: " StackOverflow";
   }
   span.icon-twitter:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Twitter";
+    content: " Twitter";
   }
   span.icon-comments:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "IRC";
+    content: " IRC";
   }
   span.icon-envelope:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: "Mailing List";
+    content: " Mailing List";
   }
   .bf-header h1,
   .bf-header p {
