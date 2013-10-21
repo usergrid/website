@@ -12,7 +12,7 @@ You will need pygments
 
 You will also need a few rubygems
 
-    $ gem install nanoc pygments.rb htmlentities pandoc-ruby
+    $ sudo gem install nanoc pygments.rb htmlentities pandoc-ruby nokogiri rack mime-types
 
 To test locally, you can use the autocompiler (will build changes on every request) and check the website at http://0.0.0.0:3000/
 
