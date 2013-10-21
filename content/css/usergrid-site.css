@@ -136,6 +136,7 @@ li.nav-header {
   font-style: italic;
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   opacity: 0.8;
+  font-size: 110%;
 }
 .navbar-nav > li a {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -179,6 +180,9 @@ h1 {
   letter-spacing: 110%;
   font-size: 200%;
 }
+.page-header {
+  padding-top: 2px;
+}
 .page-header h1 {
   padding-top:20px;
   font-weight: 400;
@@ -210,6 +214,11 @@ h3 {
   font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300 !important;
   font-style: italic;
+}
+#copyright img {
+  border-radius: 4px;
+}
+#copyright p {
   opacity: 0.8;
 }
 #copyright .credits {
@@ -912,7 +921,7 @@ section > .container > h2 {
     float: left;
     display: inline;
     line-height: 20px;
-    margin: 100px 10px 20px 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 /* Social proof buttons from GitHub & Twitter */
@@ -1121,6 +1130,11 @@ section > .container > h2 {
     font-weight: 600;
     content: " Docs";
   }
+  span.icon-group:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: " Community";
+  }
   span.icon-github-sign:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -1273,6 +1287,11 @@ section > .container > h2 {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     content: " Docs";
+  }
+  span.icon-group:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: " Community";
   }
   span.icon-github-sign:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
