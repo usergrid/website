@@ -16,7 +16,7 @@ title: the BaaS not made for Hipsters
             <div class="btn-wrapper">
                 <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
                 <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-                <p><span class="or">or</span> <a href="#">Download Apache Usergrid 0.1</a></p>
+                <p><span class="or">or</span> <a href="#">Download Apache Usergrid <%= release("org.usergrid", "usergrid-core","latestVersion")%></a></p>
             </div>
             
         </div>
@@ -86,28 +86,28 @@ title: the BaaS not made for Hipsters
             </div>
             <div class="col-md-4 text-left">
                     <h2>Recent Releases</h2>
-                    <h4>Released 24, September, 2013</h4>
+                    <h3><%= release("org.usergrid", "usergrid-core","a")%></h3>
                     <ul>
-                        <li>Modify user authenticate</li>
-                        <li>Adding user property</li>
+                        <li>Latest Version: <%= release("org.usergrid", "usergrid-core","latestVersion")%></li>
+                        <li>Release Date: <%= release("org.usergrid", "usergrid-core","timestamp")%></li>
                     </ul>
-                    
-                    <h4>Released 24, September, 2013</h4>
+
+                <h4><%= release("org.usergrid", "usergrid-config","a")%></h4>
                     <ul>
-                        <li>Modify user authenticate</li>
-                        <li>Adding user property</li>
+                        <li>Latest Version: <%= release("org.usergrid", "usergrid-config","latestVersion")%></li>
+                        <li>Release Date: <%= release("org.usergrid", "usergrid-config","timestamp")%></li>
                     </ul>
-                
-                    <h4>Released 24, September, 2013</h4>
+
+                <h4><%= release("org.usergrid", "usergrid-count-common","a")%></h4>
                     <ul>
-                        <li>Modify user authenticate</li>
-                        <li>Adding user property</li>
+                        <li>Latest Version: <%= release("org.usergrid", "usergrid-count-common","latestVersion")%></li>
+                        <li>Release Date: <%= release("org.usergrid", "usergrid-count-common","timestamp")%></li>
                     </ul>
-                
-                    <h4>Released 24, September, 2013</h4>
+
+                <h4><%= release("org.usergrid", "usergrid-services","a")%></h4>
                     <ul>
-                        <li>Modify user authenticate</li>
-                        <li>Adding user property</li>
+                        <li>Latest Version: <%= release("org.usergrid", "usergrid-services","latestVersion")%></li>
+                        <li>Release Date: <%= release("org.usergrid", "usergrid-services","timestamp")%></li>
                     </ul>
             </div>
             <!--<div class="col-md-4">
