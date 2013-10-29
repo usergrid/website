@@ -24,6 +24,12 @@ compile '/docs/*' do
   layout 'docs'
 end
 
+compile '/community/*' do
+  @community = true
+  filter :erb
+  layout 'community'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items

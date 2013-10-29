@@ -16,8 +16,8 @@ urls = []
 Anemone.crawl("http://apigee.com/docs/app_services", :skip_query_strings => true) do |anemone|
   # anemone.on_every_page {|page| puts page.url}
   # anemone.skip_links_like(/https?\:\/\/apigee.com\/docs\/(comment|node|api-platform|console|ja|enterprise|consoletogo)/)
-  anemone.focus_crawl { |page| page.links.select{|l| l.to_s.match(/https?\:\/\/apigee.com\/docs\/(app-services|usegrid)\/content/) } }
-  anemone.on_pages_like(/https?\:\/\/apigee.com\/docs\/(app-services|usegrid)\/content/) do |page|
+  anemone.focus_crawl { |page| page.links.select{|l| l.to_s.match(/https?\:\/\/apigee.com\/docs\/(app-services|usergrid)\/content/) } }
+  anemone.on_pages_like(/https?\:\/\/apigee.com\/docs\/(app-services|usergrid)\/content/) do |page|
     urls.push page.url
     # puts "Found #{page.url}"
   end
@@ -27,6 +27,8 @@ end
 urls = urls.compact.map{|u| u.to_s}.uniq.sort
 
 puts "Found #{urls.size} documentation articles"
+puts urls.join("\n")
+gets
 
 a = Mechanize.new { |agent|
   agent.user_agent_alias = 'Mac Safari'
@@ -61,7 +63,7 @@ urls.each do |url|
       markdown.gsub!('App Services', 'Apache Usergrid')
       markdown.insert(0,front_matter)
       today = Time.new.strftime('%Y-%m-%d')
-      File.open("../_posts/#{today}-#{name}.md", 'w') {|f| f.write(markdown) }
+      File.open("../content/docs/#{today}-#{name}.md", 'w') {|f| f.write(markdown) }
     end
   rescue Exception => e
     puts e
