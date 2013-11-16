@@ -645,6 +645,10 @@ section > .container > h2 {
   margin-top: 0;
 }
 
+.bf-community .row a p {
+  color: rgb(51,51,51);
+}
+
 /*.bf-community h2 {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(51,51,51);
@@ -682,6 +686,15 @@ section > .container > h2 {
 h2.icns-calendar:before{
   text-align: right;
   content: "\F073";
+  font-family: 'FontAwesome';
+  font-size: 100%;
+  margin-left: -40px;
+  padding-right: 10px;
+  line-height: 0;
+}
+h2.icns-envelope:before{
+  text-align: right;
+  content: "\F0E0";
   font-family: 'FontAwesome';
   font-size: 100%;
   margin-left: -40px;
@@ -1217,6 +1230,11 @@ h2.icns-group:before{
     font-weight: 600;
     content: " Trello";
   }
+  span.icon-bug:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: " JIRA";
+  }
   span.icon-stackexchange:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -1235,7 +1253,7 @@ h2.icns-group:before{
   span.icon-envelope:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: " Mailing List";
+    content: " Mailing Lists";
   }
   div.cta {
     line-height: 60px;
@@ -1388,6 +1406,11 @@ h2.icns-group:before{
     font-weight: 600;
     content: " Trello";
   }
+  span.icon-bug:after {
+    font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    content: " JIRA";
+  }
   span.icon-stackexchange:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -1406,7 +1429,7 @@ h2.icns-group:before{
   span.icon-envelope:after {
     font-family: 'klavika-web', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
-    content: " Mailing List";
+    content: " Mailing Lists";
   }
   .bf-header h1,
   .bf-header p {
