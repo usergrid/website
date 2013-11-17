@@ -8,15 +8,15 @@ title: the BaaS not made for Hipsters
             <img class="logo-title img-responsive hidden-xs" src="img/apache_usergrid_logo_white.png" />
             <div class="text-container">
                 <h2 class="tagline">The BaaS <em>not</em> made for Hipsters</h2>
-                <p class="description">Designed for multi-tenancy &amp; operational predictability. Built on Java 7, Jersey &amp; Apache Cassandra, with SDKs for iOS, Android, HTML5/JS, node.js, Ruby, Java, .NET, PHP and more.
+                <p class="description">Designed for multi-tenancy &amp; operational predictability. Built on Java 7, Jersey &amp; Apache Cassandra, with SDKs for iOS, Android, HTML5/JS, node.js, Ruby, Java, .NET, PHP — and so much more.
                 <em>Open source since 2011.</em>
             </p>
             </div>
             
             <div class="btn-wrapper">
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=apigee&repo=usergrid-stack&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="140" height="30"></iframe>
-                <p><span class="or">or</span> <a href="#">Download Apache Usergrid <%= release("org.usergrid", "usergrid-core","latestVersion")%></a></p>
+                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
+                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
+                <p><span class="or">or</span> <a href="https://github.com/apigee/usergrid-stack/archive/usergrid-<%= releases["response"]["docs"][0]["v"]%>.zip">Download Apache Usergrid <%= releases["response"]["docs"][0]["v"]%></a></p>
             </div>
             
         </div>
@@ -46,7 +46,7 @@ title: the BaaS not made for Hipsters
             <div class="col-md-4">
                 <div class="bf-icon-wrap" style="font-size:40px; vertical-align: 15px;"><i aria-hidden="true" class="icon-apple"></i> <i aria-hidden="true" class="icon-android"></i></div>
                 <h3>SDKs</h3>
-                <p>We have full SDKs for <a href="https://github.com/usergrid/usergrid-ios-sdk">iOS</a>, <a href="https://github.com/usergrid/usergrid-android-sdk">Android</a>, and <a href="https://github.com/usergrid/usergrid-html5-sdk">HTML5/JS</a> but also <a href="https://github.com/usergrid/usergrid-rails-sdk">Ruby on Rails</a>, pure <a href="https://github.com/usergrid/usergrid-ruby-sdk">Ruby</a>, <a href="https://github.com/usergrid/usergrid-nodejs-sdk">node.js</a>, server-side <a href="https://github.com/usergrid/usergrid-java-sdk">Java</a>, <a href="https://github.com/usergrid/usergrid-.net-sdk">.NET / Windows Phone</a> and <a href="https://github.com/usergrid/usergrid-php-sdk">PHP</a>!</p>
+                <p>We have full SDKs for <a href="https://github.com/usergrid/usergrid/tree/master/sdks/ios">iOS</a>, <a href="https://github.com/usergrid/usergrid/tree/master/sdks/android">Android</a>, and <a href="https://github.com/usergrid/usergrid/tree/master/sdks/html5-javascript">HTML5/JS</a> but also <a href="https://github.com/usergrid/usergrid/tree/master/sdks/nodejs">node.js</a>, <a href="https://github.com/usergrid/usergrid/tree/master/sdks/ruby-on-rails">Ruby on Rails</a>, pure <a href="https://github.com/usergrid/usergrid/tree/master/sdks/ruby">pure Ruby</a>, server-side <a href="https://github.com/usergrid/usergrid/tree/master/sdks/java">Java</a>, <a href="https://github.com/usergrid/usergrid/tree/master/sdks/dotnet">.NET / Windows</a> and <a href="https://github.com/usergrid/usergrid/tree/master/sdks/php">PHP</a>!</p>
             </div>
             <div class="col-md-4">
                 <div class="bf-icon-wrap"><span style="font-size:60px" aria-hidden="true" class="icon-road"></span></div>
@@ -67,7 +67,7 @@ title: the BaaS not made for Hipsters
 <section class="bf-questions">
     <div class="container">
             <div class="col-md-12 text-center cta">
-                Interested? You can <a href="https://github.com/usergrid/usergrid-stack#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="https://groups.google.com/forum/#!forum/usergrid" class="btn btn-inverse btn-lg">Ask a Question on the List</a></span>
+                Interested? You can <a href="https://github.com/usergrid/usergrid#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="/community/#mailing-lists" class="btn btn-inverse btn-lg">Ask a Question on the Lists</a></span>
             </div>
     </div>
 </section
@@ -85,35 +85,14 @@ title: the BaaS not made for Hipsters
                 <p>For architects and back-end teams, it aims to provide a distributed, easily extendable, operationally predictable and highly scalable solution. For front-end developers, it aims to simplify the development process by enabling them to rapidly build and operate mobile and web applications without requiring backend expertise.</p>
             </div>
             <div class="col-md-4 text-left">
-                    <h2>Recent Releases</h2>
-                    <h3><%= release("org.usergrid", "usergrid-core","a")%></h3>
-                    <ul>
-                        <li>Latest Version: <%= release("org.usergrid", "usergrid-core","latestVersion")%></li>
-                        <li>Release Date: <%= release("org.usergrid", "usergrid-core","timestamp")%></li>
-                    </ul>
-
-                <h4><%= release("org.usergrid", "usergrid-config","a")%></h4>
-                    <ul>
-                        <li>Latest Version: <%= release("org.usergrid", "usergrid-config","latestVersion")%></li>
-                        <li>Release Date: <%= release("org.usergrid", "usergrid-config","timestamp")%></li>
-                    </ul>
-
-                <h4><%= release("org.usergrid", "usergrid-count-common","a")%></h4>
-                    <ul>
-                        <li>Latest Version: <%= release("org.usergrid", "usergrid-count-common","latestVersion")%></li>
-                        <li>Release Date: <%= release("org.usergrid", "usergrid-count-common","timestamp")%></li>
-                    </ul>
-
-                <h4><%= release("org.usergrid", "usergrid-services","a")%></h4>
-                    <ul>
-                        <li>Latest Version: <%= release("org.usergrid", "usergrid-services","latestVersion")%></li>
-                        <li>Release Date: <%= release("org.usergrid", "usergrid-services","timestamp")%></li>
-                    </ul>
+                <h2>Recent Releases</h2>
+                <ul>
+                    <% releases["response"]["docs"].each do |release| %>
+                    <h4><%= release["v"]%></h4>
+                    <p><em>released <%= DateTime.strptime(release["timestamp"].to_s, "%Q").strftime("%B %-d, %Y")%></em></p>
+                    <% end %>
+                </ul>
             </div>
-            <!--<div class="col-md-4">
-                <a class="twitter-timeline" href="https://twitter.com/search?q=usergrid" data-widget-id="389588441240829952" data-chrome="transparent">Tweets about "usergrid"</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>-->
         </div>
 
     </div>
