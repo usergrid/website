@@ -113,6 +113,10 @@ li.nav-header {
   padding-top: 0 !important;
   padding-left: 0 !important;
   font-size: 120%;
+  margin-top: 33px;
+}
+.twitter-timeline {
+  margin-top: 33px;
 }
 .bf-docs-container .nav-list li.nav-header {
   padding: 0 !important;
@@ -126,7 +130,7 @@ li.nav-header {
   padding-right: 8px;
 }
 
-.bf-docs-container h2, .bf-docs-container h3 {
+.bf-community h2, .bf-docs-container h2, .bf-docs-container h3 {
   padding-top: 90px;
   margin-top: -60px;
 }
@@ -655,10 +659,10 @@ section > .container > h2 {
 }*/
 
 .bf-community h2 {
-  padding: 0 !important;
+  /*padding: 0 !important;*/
   border-bottom: solid 1px #ccc;
   line-height: 0;
-  margin-top: 33px;
+  /*margin-top: 33px;*/
   margin-bottom: 13px;
 }
 .bf-community h2 span {
