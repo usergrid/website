@@ -14,9 +14,9 @@ title: the BaaS not made for Hipsters
             </div>
             
             <div class="btn-wrapper">
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
-                <iframe class="social-btn" src="http://ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
-                <p><span class="or">or</span> <a href="https://github.com/apigee/usergrid-stack/archive/usergrid-<%= releases["response"]["docs"][0]["v"]%>.zip">Download Apache Usergrid <%= releases["response"]["docs"][0]["v"]%></a></p>
+                <iframe class="social-btn" src="//ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=watch&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
+                <iframe class="social-btn" src="//ghbtns.com/github-btn.html?user=usergrid&repo=usergrid&type=fork&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="30"></iframe>
+                <p><span class="or">or</span> <a href="<%= releases[0]["zipball_url"]%>">Download Apache Usergrid <%= releases[0]["tag_name"]%></a></p>
             </div>
             
         </div>
@@ -67,7 +67,7 @@ title: the BaaS not made for Hipsters
 <section class="bf-questions">
     <div class="container">
             <div class="col-md-12 text-center cta">
-                Interested? You can <a href="https://github.com/usergrid/usergrid#requirements" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="/community/#mailing-lists" class="btn btn-inverse btn-lg">Ask a Question on the Lists</a></span>
+                Interested? You can <a href="https://github.com/usergrid/usergrid/blob/master/stack#requirements" target="_blank" class="btn btn-inverse btn-lg">Try it on your Machine Now</a> <span class="avoidwrap">or&nbsp;<a href="/community/#mailing-lists" class="btn btn-inverse btn-lg">Ask a Question on the Lists</a></span>
             </div>
     </div>
 </section
@@ -86,12 +86,11 @@ title: the BaaS not made for Hipsters
             </div>
             <div class="col-md-4 text-left">
                 <h2>Recent Releases</h2>
-                <ul>
-                    <% releases["response"]["docs"].each do |release| %>
-                    <h4><%= release["v"]%></h4>
-                    <p><em>released <%= DateTime.strptime(release["timestamp"].to_s, "%Q").strftime("%B %-d, %Y")%></em></p>
+                    <% releases.each do |release| %>
+                    <h3><%= release["name"]%> <small><%= release["tag_name"]%></small></h3>
+                    <p><em>Published <%= DateTime.parse(release["published_at"]).strftime("%B %-d, %Y")%></em><br/>
+                    <a href="<%= releases[0]["zipball_url"]%>">Download</a> or <a href="https://github.com/usergrid/usergrid/releases/tag/<%= release["tag_name"] %>" target="_blank">See Github for details</a>.</p>
                     <% end %>
-                </ul>
             </div>
         </div>
 

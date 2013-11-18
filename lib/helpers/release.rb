@@ -5,7 +5,7 @@ require 'date'
 
 module ReleaseHelper
   def releases()
-    file = open('http://search.maven.org/solrsearch/select?q=g:%22org.usergrid%22+AND+a:%22usergrid-core%22&rows=20&core=gav')
+    file = open('https://api.github.com/repos/usergrid/usergrid/releases')
     return JSON.parse(file.read)
     # if type != 'timestamp'
     #   parsed['response']['docs'][0][type]
