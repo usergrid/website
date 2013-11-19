@@ -18,6 +18,6 @@ To test locally, you can use the autocompiler (will build changes on every reque
 
 	$ nanoc autocompile
 
-To build for export use the following comments. The static website will be in `output/`
+To build for export use the following comments. The static website will be in `publish/`
 
 	$ nanoc compile
